@@ -1,8 +1,8 @@
 FROM marxin/gcc-docker
 MAINTAINER Martin Liška
 
-WORKDIR /abuild/inkscape
+WORKDIR /abuild/inkscape-0.48.5
 ENV CXXFLAGS "-flto=$(nproc)"
 ENV LDFLAGS "-flto=$(nproc)"
-run ./configure
-make -j$(nproc) V=1
+RUN ./configure
+RUN make -j$(nproc) V=1
