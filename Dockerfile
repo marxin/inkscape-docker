@@ -1,7 +1,7 @@
 FROM marxin/gcc-docker
 MAINTAINER Martin Liška
 
-WORKDIR /abuild/inkscape-0.48.5
+WORKDIR /abuild/inkscape
 ENV CFLAGS -flto=4
 ENV CXXFLAGS -flto=4
 ENV LDFLAGS -flto=4
